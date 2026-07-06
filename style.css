@@ -1,0 +1,178 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#EAF6FF;
+    display:flex;
+    justify-content:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:420px;
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+h1{
+    text-align:center;
+    color:#1565C0;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#666;
+    margin-bottom:20px;
+    line-height:1.5;
+}
+
+.menu{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.menu button{
+
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+    background:#E0E0E0;
+    transition:0.3s;
+
+}
+
+.menu button.active{
+
+    background:#1976D2;
+    color:white;
+
+}
+
+h2{
+
+    text-align:center;
+    color:#2E7D32;
+    margin-bottom:15px;
+
+}
+
+.beaker{
+
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+
+}
+
+canvas{
+
+    width:300px;
+    height:360px;
+
+    border:4px solid #00897B;
+
+    border-top-left-radius:90px 25px;
+    border-top-right-radius:90px 25px;
+
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+
+    background:#FDFDFD;
+
+}
+
+.status{
+
+    text-align:center;
+    margin-bottom:20px;
+
+}
+
+#statusText{
+
+    font-size:18px;
+    font-weight:bold;
+    color:#1565C0;
+
+}
+
+.controls{
+
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+
+}
+
+.controls button{
+
+    padding:10px 18px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background:#1976D2;
+    color:white;
+    font-size:15px;
+    transition:0.3s;
+
+}
+
+.controls button:hover{
+
+    background:#0D47A1;
+
+}
+
+.info{
+
+    background:#F5F5F5;
+    border-radius:12px;
+    padding:15px;
+
+}
+
+.info h3{
+
+    margin-bottom:8px;
+    color:#2E7D32;
+
+}
+
+.info p{
+
+    line-height:1.6;
+    color:#444;
+
+}
+
+@media(max-width:480px){
+
+canvas{
+
+width:260px;
+height:320px;
+
+}
+
+.container{
+
+padding:15px;
+
+}
+
+  }
